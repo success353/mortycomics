@@ -1,11 +1,8 @@
-import React from 'react'
-
-import Characters from '@/components/Characters'
+import Characters from '@/Components/Characters';
+import React from 'react';
 
 function characters() {
-  return (
-    <Characters />
-  )
+  return <Characters />;
 }
 
-export default characters
+export default characters;

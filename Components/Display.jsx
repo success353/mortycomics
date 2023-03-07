@@ -24,8 +24,8 @@ function Display() {
   }
   return (
     <div className="pt-5 px-5 text-xs">
-      <div>
-        {data && (
+      {data && (
+        <>
           <div className="flex justify-between items-center">
             <div className="border rounded-md px-2 py-1 cursor-pointer">
               Count {data.info.count}
@@ -50,8 +50,11 @@ function Display() {
               </div>
             )}
           </div>
-          )}
-      </div>
+          <>
+            <Card />
+          </>
+        </>
+      )}
     </div>
   );
 }

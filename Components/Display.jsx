@@ -25,35 +25,30 @@ function Display() {
   return (
     <div className="pt-5 px-5 text-xs">
       {data && (
-        <>
-          <div className="flex justify-between items-center">
-            <div className="border rounded-md px-2 py-1 cursor-pointer">
-              Count {data.info.count}
-            </div>
-            <div className="border rounded-md px-2 py-1 cursor-pointer">
-              {data.info.pages} Pages
-            </div>
-            {data.info.next && (
-              <div
-                onClick={next}
-                className="border rounded-md px-2 py-1 cursor-pointer"
-              >
-                Next
-              </div>
-            )}
-            {data.info.prev && (
-              <div
-                onClick={prev}
-                className="border rounded-md px-2 py-1 cursor-pointer"
-              >
-                Prev
-              </div>
-            )}
+        <div className="flex justify-between items-center">
+          <div className="border rounded-md px-2 py-1 cursor-pointer">
+            Count {data.info.count}
           </div>
-          <>
-            <Card />
-          </>
-        </>
+          <div className="border rounded-md px-2 py-1 cursor-pointer">
+            {data.info.pages} Pages
+          </div>
+          {data.info.next && (
+            <div
+              onClick={next}
+              className="border rounded-md px-2 py-1 cursor-pointer"
+            >
+              Next
+            </div>
+          )}
+          {data.info.prev && (
+            <div
+              onClick={prev}
+              className="border rounded-md px-2 py-1 cursor-pointer"
+            >
+              Prev
+            </div>
+          )}
+        </div>
       )}
     </div>
   );

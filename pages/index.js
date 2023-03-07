@@ -18,8 +18,8 @@ function index() {
   ]
   return (
     <main className='font-inter pt-20'>
-      <h1 className='text-5xl text-gray-700 text-center font-extrabold lg:text-8xl'>Rick and Morty</h1>
-      <div className='flex justify-evenly items-center pt-60'>
+      <h1 className='text-4xl text-gray-700 text-center font-extrabold lg:text-8xl'>Rick and Morty.</h1>
+      <div className='flex justify-evenly items-center pt-60 text-xs lg:text-sm'>
         {buttons.map((button, index) => (
           <Link href={button.link} key={index}>
               <div className='text-black border px-5 py-1 rounded-md cursor-pointer'>{button.title}</div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Characters from '@/Components/Characters'
+import Characters from '@/components/Characters'
 
 function characters() {
   return (
